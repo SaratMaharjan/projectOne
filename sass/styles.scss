@@ -1,0 +1,227 @@
+
+//Variables
+$break-xs: 767px;
+$break-s: 991px;
+$break-m: 1199px;
+$mainColor: #3c4049;
+$mainBg: #f7f7f7;
+
+//anfang Mixings
+	@mixin sizeResponse($size) {
+		@if $size == xs {
+			@media (max-width: $break-xs) { @content; }
+		} @else if $size == s {
+			@media (min-width: $break-xs + 1) and (max-width: $break-s) { @content; }
+		} @else if $size == m {
+			@media (min-width: $break-s + 1) and (max-width: $break-m) { @content; }
+		} @else if $size == l {
+			@media (min-width: $break-m + 1) { @content; }
+		}
+	}
+
+	@mixin border-radius($radius) {
+	  -webkit-border-radius: $radius;
+		 -moz-border-radius: $radius;
+		  -ms-border-radius: $radius;
+			  border-radius: $radius;
+}
+
+//ende Mixings
+
+body {
+	font-size: 16px;
+	color: $mainColor;
+	background-color: $mainBg;
+	text-align: center;
+}
+
+//anfang Header 
+	#topBar {
+		background-color: #dddddd;
+		@include border-radius(0px);
+		height: 60px;
+
+		div {
+			margin: auto;
+			padding: 5px;
+			vertical-align: middle;
+		}
+	}
+
+	#logoImgTop {
+		background: url("http://placehold.it/50x50") no-repeat;
+		width: 50px;
+		height: 50px;
+		margin: 1px;
+		display: inline-block;
+	}
+
+	.websiteName{
+		font-size: 20px;
+		color: #136501;
+		text-align: center;
+	}
+
+	.navbar li {
+		width: 100%;
+	}
+
+	.navbar-toggle {
+		float: none;
+	}
+
+	#searchIcon {
+		font-size: 20px;
+	}
+
+//ende Header 
+
+//anfang Footer 
+	.panel-footer {
+		margin-top: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #dddddd;
+		border-top: 0;
+	}
+	
+	.footer {
+		div.row {
+			margin: auto;
+		}
+	}
+//ende Footer 
+
+//anfang Navigation 
+	.navbar{
+		border: none;
+		@include border-radius(0px);
+		li {
+			width: 100%;
+		}
+	}
+
+//ende Navigation 
+
+//anfang Home Page 
+	#mainContent {
+		padding: 0px;
+		margin: auto;
+	}
+
+	.item {
+		//border: 1px solid #3F0C1F; 
+		//box-shadow: 0 0 1px #3F0C1F; 
+		transition: all .2s ease-in-out;
+		margin: auto;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+
+	}
+
+	.imgContainer {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+
+		.dummy {
+			margin-top: 100%
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: silver;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			//max-height: 100%;
+			//max-width: 100%;
+			margin: auto;
+		}
+
+	}
+
+	.jumbotron{
+		position: relative;
+		padding-top: 100%;
+		width: 100%;
+		border: none;
+		@include border-radius(0px);
+		margin-top: 15px;
+	}
+
+	.jumbotronImg{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		//width: 100%;
+		//height: 100%;
+		background: url("../images/item2.png") no-repeat center; 
+		background-size: cover;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#sideBar {
+		margin-top: 15px;
+	}
+
+	#mainContent {
+		margin-top: 15px;
+	}
+
+	.item {
+		height: auto;
+		margin: 0px 0px 0px 0px;
+		padding: 5px 5px 5px 5px;
+
+		@include sizeResponse(xs) {float: none; margin: auto;}
+	}
+
+//ende Home Page
+
+//anfang Share Button
+	.share-btn {
+		display: inline-block;
+		color: #ffffff;
+		border: none;
+		padding: 0.5em;
+		width: 15%;
+		opacity: 0.9;
+		box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
+		outline: none;
+		text-align: center;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			color: #eeeeee;
+			transform: scale(1.1);
+		}
+
+		&:active {
+			position: relative;
+			top: 2px;
+			box-shadow: none;
+			color: #e2e2e2;
+			outline: none;
+		}
+
+	}
+
+	.share-btn.twitter { background: #55acee; }
+	.share-btn.google-plus { background: #dd4b39; }
+	.share-btn.facebook { background: #3B5998; }
+	.share-btn.stumbleupon { background: #EB4823; }
+	.share-btn.reddit { background: #ff5700; }
+	.share-btn.linkedin    { background: #4875B4; }
+	.share-btn.email { background: #444444; }
+//ende Share Button
+
