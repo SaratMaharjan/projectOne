@@ -9,7 +9,7 @@ $(function(){
 	//startAnim();
 
 	$("#headerPlaceholder").load("include/header.html");
-	$("#sidebarPlaceholder").load("include/sideBar.html");
+	$("#sideBar").load("include/sideBar.html");
 	$("#footerPlaceholder").load("include/footer.html");
 
 	var addItems = function(){
