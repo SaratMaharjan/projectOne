@@ -15,6 +15,7 @@
 !*.docx
 !*.dotm
 !*.dvb
+!*.ejs
 !*.eot
 !*.exe
 !*.exportedUI

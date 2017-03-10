@@ -1,0 +1,233 @@
+/* line 31, ../sass/styles.scss */
+body {
+  font-size: 16px;
+  color: #3c4049;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+/* line 39, ../sass/styles.scss */
+#topBar {
+  background-color: #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  height: 60px;
+}
+/* line 44, ../sass/styles.scss */
+#topBar div {
+  margin: auto;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/* line 51, ../sass/styles.scss */
+#logoImgTop {
+  background: url("http://placehold.it/50x50") no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  display: inline-block;
+}
+
+/* line 59, ../sass/styles.scss */
+.websiteName {
+  font-size: 20px;
+  color: #136501;
+  text-align: center;
+}
+
+/* line 65, ../sass/styles.scss */
+.navbar li {
+  width: 100%;
+}
+
+/* line 69, ../sass/styles.scss */
+.navbar-toggle {
+  float: none;
+}
+
+/* line 73, ../sass/styles.scss */
+#searchIcon {
+  font-size: 20px;
+}
+
+/* line 80, ../sass/styles.scss */
+.panel-footer {
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #dddddd;
+  border-top: 0;
+}
+
+/* line 89, ../sass/styles.scss */
+.footer div.row {
+  margin: auto;
+}
+
+/* line 96, ../sass/styles.scss */
+.navbar {
+  border: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 99, ../sass/styles.scss */
+.navbar li {
+  width: 100%;
+}
+
+/* line 107, ../sass/styles.scss */
+#mainContent {
+  padding: 0px;
+  margin: auto;
+}
+
+/* line 112, ../sass/styles.scss */
+.item {
+  transition: all .2s ease-in-out;
+  margin: auto;
+}
+/* line 118, ../sass/styles.scss */
+.item:hover {
+  transform: scale(1.05);
+}
+
+/* line 124, ../sass/styles.scss */
+.imgContainer {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+/* line 129, ../sass/styles.scss */
+.imgContainer .dummy {
+  margin-top: 100%;
+}
+/* line 133, ../sass/styles.scss */
+.imgContainer img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: silver;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+/* line 150, ../sass/styles.scss */
+.jumbotron {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  border: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  margin-top: 15px;
+}
+
+/* line 159, ../sass/styles.scss */
+.jumbotronImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/item2.png") no-repeat center;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 173, ../sass/styles.scss */
+#sideBar {
+  margin-top: 15px;
+}
+
+/* line 177, ../sass/styles.scss */
+#mainContent {
+  margin-top: 15px;
+}
+
+/* line 181, ../sass/styles.scss */
+.item {
+  height: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+}
+@media (max-width: 767px) {
+  /* line 181, ../sass/styles.scss */
+  .item {
+    float: none;
+    margin: auto;
+  }
+}
+
+/* line 192, ../sass/styles.scss */
+.share-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  padding: 0.5em;
+  width: 15%;
+  opacity: 0.9;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  outline: none;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+/* line 204, ../sass/styles.scss */
+.share-btn:hover {
+  color: #eeeeee;
+  transform: scale(1.1);
+}
+/* line 209, ../sass/styles.scss */
+.share-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  color: #e2e2e2;
+  outline: none;
+}
+
+/* line 219, ../sass/styles.scss */
+.share-btn.twitter {
+  background: #55acee;
+}
+
+/* line 220, ../sass/styles.scss */
+.share-btn.google-plus {
+  background: #dd4b39;
+}
+
+/* line 221, ../sass/styles.scss */
+.share-btn.facebook {
+  background: #3B5998;
+}
+
+/* line 222, ../sass/styles.scss */
+.share-btn.stumbleupon {
+  background: #EB4823;
+}
+
+/* line 223, ../sass/styles.scss */
+.share-btn.reddit {
+  background: #ff5700;
+}
+
+/* line 224, ../sass/styles.scss */
+.share-btn.linkedin {
+  background: #4875B4;
+}
+
+/* line 225, ../sass/styles.scss */
+.share-btn.email {
+  background: #444444;
+}

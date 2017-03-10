@@ -1,0 +1,22 @@
+{
+  "name": "te-co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SaratMaharjan/projectOne.git"
+  },
+  "author": "sm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaratMaharjan/projectOne/issues"
+  },
+  "homepage": "https://github.com/SaratMaharjan/projectOne#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
